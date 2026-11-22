@@ -1,0 +1,294 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{\textbf{ZGFT（治梓琪几何场论）引论：在四维形上N+a或许为a}}
+\author{治梓琪}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{符号说明：}由于语言可能渲染错误，下列所有 \(\mathbf{k}\) 均为黑体，表示向量；带后缀或次方下标的 \(k\)（如 \(k_x\)、\(k_y\)）为白体。黑体 \(\mathbf{k}\) 是向量。
+
+\section{定义}
+
+\begin{equation}
+\Delta_+ f(x)=\frac{f(x+a)-f(x)}{a}
+\end{equation}
+（这是微观，如果是宏观，那么这个和以下所有均为中心差分）
+
+同时，本式与以下所有均默认 \(c=1\)。
+
+\begin{equation}
+\Delta_{++}(x)=\frac{f(x+2a)-2f(x+a)+f(x)}{a^2}
+\end{equation}
+
+\begin{equation}
+\Delta_{2x+}f(x,y)=\frac{f(x+a,y)-f(x,y)}{a}
+\end{equation}
+
+\(\Delta_{2y+}\) 同理。
+
+\(\Delta_{2x++}\) 什么也都省略。
+
+\(\sum f(x)a\) 是一个离散积分，微积分第一定律和第二定律仍然生效。
+
+当 \(a\to 0\) 时，退化成传统微积分。
+
+其在物理上是不可能取 0 的，距离最小只能是普朗克距离，毕竟这是最小的有意义的地方。
+
+在四维形上 \(N+a\) 或许为 \(a\)。因此，不存在边界，比如在一个球，我们在球上走一圈多一点，我们只会回到起点；而时空作为四维会更复杂，因此，不存在边界。
+
+\section{ZGFT 部分}
+
+定义 \(\mathbf{k}\)（散变量）：
+
+\(k_x\) 为 \(a\) 在 \(x\) 轴上的变化，\(k_y\) 是 \(a\) 在 \(y\) 轴上的变化。\(k_j\in\mathbb{C}\)（复数），其中 \(j=(x,y,\dots)\)
+
+\(\mathbf{k}^4\) 为 \(\mathbf{k}\) 在四个方向的综合变化。可以直接用它代替四个方向上。
+
+\(\mathbf{k}^4\) 可以写成矩阵的形式：
+
+假设
+
+\begin{align*}
+k_x &= 6+5k_y+2k_z\\
+k_y &= 3+5k_t\\
+k_z &= 2\\
+k_t &= 1
+\end{align*}
+
+\begin{equation}
+\mathbf{k}^4=
+\begin{pmatrix}
+6 & 5 & 2 & 0\\
+0 & 3 & 0 & 5\\
+0 & 0 & 2 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{equation}
+
+再次出现声明一下，在第一列，第一行，那个 \(6\) 不代表是 \(k_x\) 乘 \(6\)，而是 \(k_x=6\)。每一个主对角线的都是。对角线上的值代表它的 \(k\) 值，而非主对角线上的其他元素，则用列的方式说明了它们的耦合。其他行同理。
+
+而正常的求一个物体的一个区域的微小体积则是 \(a^3\)，如果再算上时间，那么还要乘 \(a_tc\)。
+
+\(a_t\) 一般应该是普朗克时间。
+
+它的二维毕达哥拉斯定律的表达公式为：
+
+\begin{equation}
+S^2=\left|\sum_{n}^{x_1}k_{xn}a\right|^2+\left|\sum_{n}^{y_1}k_{yn}a\right|^2
+\end{equation}
+
+这个公式左边和右边都是实数。
+
+其中的 \(x_1\) 是在 \(x\) 上的总距离，\(y_1\) 跟它一样。
+
+也可以在这个公式两边都进行求 \(\Delta_+\)。
+
+两点之间最小距离为 \(a\)，体积和面积最小为 \(a^3\) 与 \(a^2\)。
+
+\begin{equation}
+\Delta_{++}(Z)=\sum_{n=1}^{i}h_n\cdot\mathbf{k}^4_n\cdot a^4=C
+\end{equation}
+
+其中的 \(C\) 是引力场。同时，这个式子中的 \(\mathbf{k}^4_n\) 之所以没有带绝对值符号，那是因为在该体系下是默认有实部与虚部的。其中 \(C\) 的实部是引力场的强度，虚部是量子相位。
+
+里面的 \(Z\) 详细需要在第三章了解。
+
+并且注意的是，这个式子的结果和爱因斯坦场方程几乎无异，因为它也写出了离散下的时空弯曲。
+
+\begin{equation}
+h_n=\frac{\chi\rho_n}{b}
+\end{equation}
+
+\begin{equation}
+b=\Delta_{++}\left(\frac{x^2}{2}\right)=1\ (1/L^2)
+\end{equation}
+
+\(\rho_n\) 为在 \(n\) 处的能量密度。
+
+同时是对空间进行前向差分。
+
+其中的 \(\rho\) 代表的是能量密度。
+
+它的物理意义是质量的微小变化，会引起时空的散变量的微小变化，而散变量的变化会影响时空的微小变化。
+
+这个式子左边的量纲和右边的量纲相同。
+
+其中等式右边的 \(\chi=8\pi G/c^4\)。
+
+\begin{equation}
+s^2\nabla^2(\mathbf{k})=\frac{\Delta_{2++}(\mathbf{k})}{\Delta_{2++}t^2}
+\end{equation}
+
+\(s\) 是 \(\mathbf{k}\) 的传播速度常数（无量纲）。
+
+这个理论将 \(\mathbf{k}\) 视为波，当然它也是场的一种变化。
+
+由于 \(c=1\) 导致等式右侧的关于时间的二阶偏导也可以变成关于空间的。
+
+它的物理意义如下，如果 \(\mathbf{k}\) 发生了微小变化，那么它关于时间的传播会以 \(x\)、\(y\)、\(z\) 三个方向以传播速度传播。
+
+由于 \(\mathbf{k}\) 是无量纲的，因此这个式子左边和右边的量纲也相同。
+
+而如果 \(\mathbf{k}\) 是复数，再把它写成 \(e\) 的形式……
+
+\begin{equation}
+\mathbf{k}^4a^3(ca_t)
+\end{equation}
+
+计算变化率之后，算一个地方的微小体积，并且由于有 \(a_t\)，因此算的是四维图。（你应该还记得 \(c=1\)，空间和时间是等价的）
+
+\section{Z空间（Z用我名字的首字母命名）}
+
+我们设想一下，时间空间 \(x\) 轴、\(y\) 轴、\(z\) 轴、\(t\) 轴所有的东西似乎都是在一个空间上展开的，比如，在一个球体上进行的任何行为，都只应该局限在这个球体。于是，我们把这个球体称为 Z空间。
+
+其中 \(Z_x\) 代表 \(x\) 轴上的 Z空间，也就是说，无数条 \(x\) 轴组成了这个图形，当然只有一个 \(x\) 轴，那是无定义的。虽然无数条线也能组成一个立体，但是 \(x\) 仍然需要依赖于其他，而其他轴以此类推。
+
+其中的 \(k_x\) 是对 \(Z_x\) 求 \(\Delta_+\)。
+
+而想要 \(k_x\) 变回去需要用到求和号：
+
+\begin{equation}
+\sum_{n=1}^{x}k_{xn}a=Z_x
+\end{equation}
+
+其中 \(x\) 代表在 \(x\) 上的 Z空间共有多少个 \(k_{xn}a\)。
+
+还有你需要知道，在每一个坐标，在每一个点上的变化不一定相同，时空不总是是欧几里得几何的。
+
+想象在一个圆一条线，从圆的边边擦肩而过，而他们接触到的那个点，那 \(a\) 的变化就是 \(k_x\)，然后在射过来许多的线覆盖它的每一个地方，注意都是 \(x\) 轴。
+
+不存在边界是 \(n\)，\(n+1\) 无定义的情况，拿最简单的一个球体举例子，它是一个四维球，那么它是没有边界的，因为就算走到它的终点，再往前走一步，只是回到了起点。
+
+而那些宇宙的展开图，本质上是将 3+1 维转化为 2+1 维，因此，展开后不是原来的，因为它从没有边界变成了有边界。
+
+如果纯纯只有 \(z\) 轴上的变化，说明那个空间只有 \(z\) 轴，也就是一维。
+
+而完整的 Z空间，应该是包含这个维度之内的所有轴的。
+
+\section{带有 \(i\) 的矩阵}
+
+在这里，我们假设一个点的一种情况：也只能是一个点
+
+\begin{align*}
+k_x &= 3+k_yi\\
+k_y &= 24+k_x\\
+k_z &= e^i\\
+k_t &= e^i
+\end{align*}
+
+\(\mathbf{k}^4\) 写成矩阵的形式：
+
+\begin{equation}
+\mathbf{k}^4=
+\begin{pmatrix}
+3 & i & 0 & 0\\
+1 & 24 & 0 & 0\\
+0 & 0 & e^i & 0\\
+0 & 0 & 0 & e^i
+\end{pmatrix}
+\end{equation}
+
+这个矩阵是非厄米特的。
+
+在这里，我需要先声明一点，为什么我使用前向差分而并非后向差分，首先，后向差分在起点处是失效的，而前向差分在边界处是失效的，如果按照起点 \(x-a\) 等于边界 \(n\)，而起点 \(n+a\) 等于起点 \(x\)，那么其实这两者的差别很小。
+
+\section{弱力}
+
+目前写不出。
+
+\section{非固定的与固定的}
+
+在这里，我们需要引进一种新的符号 \(\Phi\)（Phi），为所有可能相加。
+
+真正需要它的时候，是在量子力学中，但现在我们先定义两个概念：
+
+\textbf{固定的：}
+
+我们将 \(x\) 称为固定的，当且仅当 \(\Phi x=x\)。
+
+\textbf{非固定的：}
+
+我们将 \(y\) 称为非固定的，当且仅当 \(\Phi y\neq y\)。
+
+如果一个数是固定的，也就是说它的可能性只有它一个数，那么它同样是确定的。如果一个东西，比如量子是量子纠缠之类的状态，那么它就属于非固定的；而假如数你身上的眼睛的数量，那么你眼睛的数量就是固定的。
+
+如果一个数是固定的，那么以下条件等价：
+
+\begin{enumerate}
+\item \(x\) 是固定的
+\item \(x\) 不是变量
+\item \(\Phi x=x\)
+\end{enumerate}
+
+证明：如果 \(x\) 不是变量，那么它就是 \(34\)、\(i\) 什么的，那么它的可能仍然是它本身，因此 1、2、3 等价。
+
+如果一个数是非固定的，那么以下条件等价：
+
+\begin{enumerate}
+\item \(y\) 是非固定的
+\item \(y\) 包含或本身为变量
+\item \(\Phi y=1\)
+\end{enumerate}
+
+如果 \(y\) 包含变量，比如 \(x\) 什么的变量，并且 \(x\) 还不是常数，那么它的可能将有很多，因此结果必然不等于它本身，但又由于归一性，因此结果必然等于 1，因此 1、2、3 等价。
+
+而固定的和非固定的有什么物理意义和其他用处呢？目前还未有用到它们的时候。
+
+而关于 \(\Phi\) 的更多信息，我将在此不做讨论，因为它将是我另一个部分 ZA（治梓琪代数，不过那也是十几年后的事，毕竟我得等 ZG 至少包含两三种基本力）。
+
+\section{3+1维度下的最小作用量}
+
+\begin{equation}
+\mathcal{Z}=\operatorname{Re}\left(\sum_i\left[\frac{1}{2}\left(\Delta_t\mathbf{k}\right)^2p^2-\frac{1}{2}\mathbf{k}^2p^2s^2\right]a^4
+-\sum_i\sum_n V(a_r)\cdot a^4\cdot\mathbf{k}^4_n
++\sum_i\sum_n\frac{\chi\rho_n}{b}\cdot a^4\cdot\mathbf{k}^4_n\right)
+\end{equation}
+
+\(p\) 是一个常数，\(s\) 在之前已有提及。同时，被减数和减数中的 \(\mathbf{k}\)，均无量纲；\(\Delta_t\mathbf{k}\) 是代表在一个时间段中 \(\mathbf{k}\) 的变化，并非前向差分。
+
+\section{核力}
+
+在此前需要了解 ZG 几个基本猜想：
+
+\begin{enumerate}
+\item 任何物体与另一个物体之间的距离最小为 \(a\)。
+\item 若两个物体之间的距离小于 \(a\) 或有力要将距离小于 \(a\)，则会有相反的一股力进行抵抗。
+\end{enumerate}
+
+\(a\) 只是我们取的是普朗克距离，但它不是固定的。
+
+由此得出公式：
+
+\begin{equation}
+V(a_r)=\frac{1}{2-\frac{\mathbf{k}^4a}{a_r}}\left[W\cdot\exp\left(-\left(\frac{a_r}{\mathbf{k}^4a}\right)^2\right)\cdot\frac{\mathbf{k}^4a}{a_r}-W_1\cdot\exp\left(-\frac{a_r}{2\mathbf{k}^4a}\right)\cdot\frac{\mathbf{k}^4a}{a_r}\right]
+\end{equation}
+
+其中的 \(r\) 在这里取 \(a\)，让这个能在目前的现实结果对比中成立。
+
+同时需要知道，\(\mathbf{k}^4\) 发生了变化，那么 \(a\) 需要乘 \(\mathbf{k}^4\)，同样会发生变化。
+
+其中的 \(w\) 是常数（量纲是能量），同时，可以推导出 \(w\approx 2070\,\mathrm{MeV}\)，\(w_1\approx 927\,\mathrm{MeV}\)。
+
+\(a_r\) 是两个发生核力物体之间的距离。
+
+用这个可以解释核力。
+
+以下是它的拉格朗日密度。
+
+\begin{equation}
+L=\operatorname{Re}\left(\frac{1}{2}\left(\Delta_t\mathbf{k}\right)^2p^2-\frac{1}{2}\mathbf{k}^2p^2s^2-V(a_r)+\frac{\chi\rho}{b}\right)
+\end{equation}
+
+\begin{equation}
+\mathcal{Z}=\operatorname{Re}\left(\sum_i\sum_n L\cdot a^4\cdot\mathbf{k}^4_n\right)
+\end{equation}
+
+
+\end{document}

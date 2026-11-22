@@ -1,0 +1,294 @@
+\documentclass[UTF8]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{\textbf{ZGFT (Ziqi Geometry Field Theory) Introduction: On the Four-Dimensional Form, N+a May Be a}}
+\author{Ziqi Zhi}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Symbol note:} Because of possible language rendering errors, all \(\mathbf{k}\) below are in bold, meaning vectors; \(k\) with a suffix or with a power subscript (such as \(k_x\), \(k_y\)) is in white body. Bold \(\mathbf{k}\) is a vector.
+
+\section{Definitions}
+
+\begin{equation}
+\Delta_+ f(x)=\frac{f(x+a)-f(x)}{a}
+\end{equation}
+(This is microscopic; if it is macroscopic, then this and all the following are central differences.)
+
+At the same time, this formula and all the following default to \(c=1\).
+
+\begin{equation}
+\Delta_{++}(x)=\frac{f(x+2a)-2f(x+a)+f(x)}{a^2}
+\end{equation}
+
+\begin{equation}
+\Delta_{2x+}f(x,y)=\frac{f(x+a,y)-f(x,y)}{a}
+\end{equation}
+
+\(\Delta_{2y+}\) is the same.
+
+\(\Delta_{2x++}\) and all the rest are also omitted.
+
+\(\sum f(x)a\) is a discrete integral; the first and second laws of calculus still hold.
+
+When \(a\to 0\), it degenerates into traditional calculus.
+
+Physically it is impossible for it to take 0; the minimum distance can only be the Planck distance, after all this is the smallest meaningful place.
+
+On the four-dimensional form \(N+a\) may be \(a\). Therefore, there is no boundary. For example, on a sphere, we walk a little more than one circle and we only return to the starting point; and spacetime as four dimensions will be more complicated, therefore, there is no boundary.
+
+\section{ZGFT Part}
+
+Define \(\mathbf{k}\) (the discrete variable):
+
+\(k_x\) is the change of \(a\) on the \(x\) axis, \(k_y\) is the change of \(a\) on the \(y\) axis. \(k_j\in\mathbb{C}\) (complex numbers), where \(j=(x,y,\dots)\)
+
+\(\mathbf{k}^4\) is the combined change of \(\mathbf{k}\) in the four directions. It can directly replace the four directions.
+
+\(\mathbf{k}^4\) can be written in the form of a matrix:
+
+Assume
+
+\begin{align*}
+k_x &= 6+5k_y+2k_z\\
+k_y &= 3+5k_t\\
+k_z &= 2\\
+k_t &= 1
+\end{align*}
+
+\begin{equation}
+\mathbf{k}^4=
+\begin{pmatrix}
+6 & 5 & 2 & 0\\
+0 & 3 & 0 & 5\\
+0 & 0 & 2 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{equation}
+
+Let it be stated once more, in the first column, the first row, that \(6\) does not mean \(k_x\) times \(6\), but \(k_x=6\). Every main diagonal is like this. The value on the diagonal represents its \(k\) value, and the other elements not on the main diagonal explain their coupling by the way of the column. Other rows are the same.
+
+And the normal way to find the small volume of a region of an object is \(a^3\); if time is also counted, then multiply also by \(a_tc\).
+
+\(a_t\) should generally be the Planck time.
+
+Its two-dimensional Pythagorean law expression is:
+
+\begin{equation}
+S^2=\left|\sum_{n}^{x_1}k_{xn}a\right|^2+\left|\sum_{n}^{y_1}k_{yn}a\right|^2
+\end{equation}
+
+The left side and the right side of this formula are both real numbers.
+
+Here \(x_1\) is the total distance on \(x\), \(y_1\) is the same.
+
+One can also apply \(\Delta_+\) to both sides of this formula.
+
+The minimum distance between two points is \(a\); the minimum volume and area are \(a^3\) and \(a^2\).
+
+\begin{equation}
+\Delta_{++}(Z)=\sum_{n=1}^{i}h_n\cdot\mathbf{k}^4_n\cdot a^4=C
+\end{equation}
+
+Here \(C\) is the gravitational field. At the same time, the reason why \(\mathbf{k}^4_n\) in this formula does not carry an absolute value sign is that under this system it is default to have a real part and an imaginary part. Here the real part of \(C\) is the strength of the gravitational field, and the imaginary part is the quantum phase.
+
+The details of \(Z\) inside need to be understood in Chapter 3.
+
+And note that the result of this formula is almost no different from the Einstein field equation, because it also writes out the bending of spacetime under discreteness.
+
+\begin{equation}
+h_n=\frac{\chi\rho_n}{b}
+\end{equation}
+
+\begin{equation}
+b=\Delta_{++}\left(\frac{x^2}{2}\right)=1\ (1/L^2)
+\end{equation}
+
+\(\rho_n\) is the energy density at \(n\).
+
+At the same time it is a forward difference on space.
+
+Here \(\rho\) represents the energy density.
+
+Its physical meaning is that a tiny change of mass will cause a tiny change of the discrete variable of spacetime, and the change of the discrete variable will affect the tiny change of spacetime.
+
+The dimension of the left side of this formula and of the right side are the same.
+
+Where on the right side of the equation \(\chi=8\pi G/c^4\).
+
+\begin{equation}
+s^2\nabla^2(\mathbf{k})=\frac{\Delta_{2++}(\mathbf{k})}{\Delta_{2++}t^2}
+\end{equation}
+
+\(s\) is the propagation speed constant of \(\mathbf{k}\) (dimensionless).
+
+This theory regards \(\mathbf{k}\) as a wave, of course it is also a kind of change of the field.
+
+Because \(c=1\), the second partial derivative with respect to time on the right side of the equation can also become with respect to space.
+
+Its physical meaning is as follows: if \(\mathbf{k}\) has a tiny change, then its propagation with respect to time will propagate in the three directions \(x\), \(y\), \(z\) at the propagation speed.
+
+Because \(\mathbf{k}\) is dimensionless, the dimensions of the left and right sides of this formula are also the same.
+
+And if \(\mathbf{k}\) is complex, then write it in the form of \(e\) again...
+
+\begin{equation}
+\mathbf{k}^4a^3(ca_t)
+\end{equation}
+
+After computing the rate of change, compute the small volume of one place, and because there is \(a_t\), therefore what is computed is the four-dimensional figure. (You should still remember \(c=1\), space and time are equivalent)
+
+\section{Z Space (Z is named with the first letter of my name)}
+
+Let us imagine, the \(x\) axis, \(y\) axis, \(z\) axis, \(t\) axis of time and space, all things seem to be spread out on one space, for example, any behavior carried out on a sphere should only be confined to this sphere. Therefore, we call this sphere Z space.
+
+Here \(Z_x\) represents the Z space on the \(x\) axis, that is, countless \(x\) axes make up this figure, of course there is only one \(x\) axis, that is undefined. Although countless lines can also make up a solid, \(x\) still needs to depend on the others, and the other axes are the same by analogy.
+
+Here \(k_x\) is taking \(\Delta_+\) of \(Z_x\).
+
+And to change \(k_x\) back one needs the summation sign:
+
+\begin{equation}
+\sum_{n=1}^{x}k_{xn}a=Z_x
+\end{equation}
+
+where \(x\) represents how many \(k_{xn}a\) there are in the Z space on \(x\).
+
+You also need to know that at every coordinate, the change at every point is not necessarily the same, spacetime is not always Euclidean geometry.
+
+Imagine a circle and a line, passing by the edge of the circle, and the point where they touch, the change of that \(a\) is \(k_x\), and then many lines are shot over to cover every place of it, note that they are all \(x\) axis.
+
+No boundary is the situation where \(n\), \(n+1\) are undefined. Take the simplest sphere as an example, it is a four-dimensional sphere, then it has no boundary, because even if we walk to its end, one more step forward is only returning to the starting point.
+
+And those unfolding pictures of the universe are essentially transforming 3+1 dimensions into 2+1 dimensions, therefore, after unfolding it is not the original one, because it went from having no boundary to having a boundary.
+
+If there is purely only change on the \(z\) axis, it shows that space only has the \(z\) axis, that is, one dimension.
+
+And the complete Z space should be all the axes contained within this dimension.
+
+\section{Matrix with \(i\)}
+
+Here, we assume one situation of one point: and it can only be one point
+
+\begin{align*}
+k_x &= 3+k_yi\\
+k_y &= 24+k_x\\
+k_z &= e^i\\
+k_t &= e^i
+\end{align*}
+
+\(\mathbf{k}^4\) written in the form of a matrix:
+
+\begin{equation}
+\mathbf{k}^4=
+\begin{pmatrix}
+3 & i & 0 & 0\\
+1 & 24 & 0 & 0\\
+0 & 0 & e^i & 0\\
+0 & 0 & 0 & e^i
+\end{pmatrix}
+\end{equation}
+
+This matrix is non-Hermitian.
+
+Here, I need to state one point first, why I use forward difference and not backward difference: first, backward difference fails at the starting point, and forward difference fails at the boundary; if according to the starting point \(x-a\) equals the boundary \(n\), and the starting point \(n+a\) equals the starting point \(x\), then the difference between these two is actually very small.
+
+\section{Weak force}
+
+Currently cannot write it out.
+
+\section{The non-fixed and the fixed}
+
+Here, we need to introduce a new symbol \(\Phi\) (Phi), meaning all possible added together.
+
+When we really need it, is in quantum mechanics, but now we first define two concepts:
+
+\textbf{Fixed:}
+
+We call \(x\) fixed, if and only if \(\Phi x=x\).
+
+\textbf{Non-fixed:}
+
+We call \(y\) non-fixed, if and only if \(\Phi y\neq y\).
+
+If a number is fixed, that is to say its possibility is only itself one number, then it is also determined. If a thing, such as quantum is a state like quantum entanglement, then it belongs to non-fixed; and if we count the number of eyes on your body, then the number of your eyes is fixed.
+
+If a number is fixed, then the following conditions are equivalent:
+
+\begin{enumerate}
+\item \(x\) is fixed
+\item \(x\) is not a variable
+\item \(\Phi x=x\)
+\end{enumerate}
+
+Proof: if \(x\) is not a variable, then it is \(34\), \(i\) or something, then its possibility is still itself, therefore 1, 2, 3 are equivalent.
+
+If a number is non-fixed, then the following conditions are equivalent:
+
+\begin{enumerate}
+\item \(y\) is non-fixed
+\item \(y\) contains or itself is a variable
+\item \(\Phi y=1\)
+\end{enumerate}
+
+If \(y\) contains a variable, such as a variable like \(x\), and \(x\) is not yet a constant, then its possibilities will be many, therefore the result is necessarily not equal to itself, but also because of normalization, therefore the result necessarily equals 1, therefore 1, 2, 3 are equivalent.
+
+And what physical meaning and other uses do the fixed and the non-fixed have? At present there is not yet a time to use them.
+
+And about more information of \(\Phi\), I will not discuss here, because it will be another part of mine, ZA (Ziqi Algebra, but that is also a matter of more than ten years later, after all I have to wait for ZG to contain at least two or three basic forces).
+
+\section{The minimal action in 3+1 dimensions}
+
+\begin{equation}
+\mathcal{Z}=\operatorname{Re}\left(\sum_i\left[\frac{1}{2}\left(\Delta_t\mathbf{k}\right)^2p^2-\frac{1}{2}\mathbf{k}^2p^2s^2\right]a^4
+-\sum_i\sum_n V(a_r)\cdot a^4\cdot\mathbf{k}^4_n
++\sum_i\sum_n\frac{\chi\rho_n}{b}\cdot a^4\cdot\mathbf{k}^4_n\right)
+\end{equation}
+
+\(p\) is a constant, \(s\) has been mentioned before. At the same time, the \(\mathbf{k}\) in the minuend and in the subtrahend are both dimensionless; \(\Delta_t\mathbf{k}\) represents the change of \(\mathbf{k}\) in one time interval, it is not a forward difference.
+
+\section{Nuclear force}
+
+Before this we need to understand several basic conjectures of ZG:
+
+\begin{enumerate}
+\item The distance between any object and another object is at minimum \(a\).
+\item If the distance between two objects is smaller than \(a\), or a force wants to make the distance smaller than \(a\), then there will be an opposite force to resist.
+\end{enumerate}
+
+\(a\) is only that we take the Planck distance, but it is not fixed.
+
+From this we obtain the formula:
+
+\begin{equation}
+V(a_r)=\frac{1}{2-\frac{\mathbf{k}^4a}{a_r}}\left[W\cdot\exp\left(-\left(\frac{a_r}{\mathbf{k}^4a}\right)^2\right)\cdot\frac{\mathbf{k}^4a}{a_r}-W_1\cdot\exp\left(-\frac{a_r}{2\mathbf{k}^4a}\right)\cdot\frac{\mathbf{k}^4a}{a_r}\right]
+\end{equation}
+
+Here \(r\) is taken as \(a\), so that this can hold in comparison with present real results.
+
+At the same time one needs to know, \(\mathbf{k}^4\) has changed, so \(a\) needs to multiply \(\mathbf{k}^4\), and will also change.
+
+Here \(w\) is a constant (the dimension is energy), at the same time, one can derive \(w\approx 2070\,\mathrm{MeV}\), \(w_1\approx 927\,\mathrm{MeV}\).
+
+\(a_r\) is the distance between two objects where nuclear force happens.
+
+Using this can explain nuclear force.
+
+Below is its Lagrangian density.
+
+\begin{equation}
+L=\operatorname{Re}\left(\frac{1}{2}\left(\Delta_t\mathbf{k}\right)^2p^2-\frac{1}{2}\mathbf{k}^2p^2s^2-V(a_r)+\frac{\chi\rho}{b}\right)
+\end{equation}
+
+\begin{equation}
+\mathcal{Z}=\operatorname{Re}\left(\sum_i\sum_n L\cdot a^4\cdot\mathbf{k}^4_n\right)
+\end{equation}
+
+
+\end{document}
