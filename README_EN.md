@@ -77,6 +77,10 @@ Compile either manuscript with XeLaTeX:
 
 CC BY 4.0
 
+## DOI
+
+[10.5281/zenodo.24433229](https://doi.org/10.5281/zenodo.24433229) — Zenodo record
+
 ## Author
 
 Ziqi Zhi (治梓琪), 2026
