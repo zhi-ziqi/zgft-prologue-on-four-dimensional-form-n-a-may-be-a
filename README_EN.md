@@ -4,18 +4,29 @@
 
 **An Introduction to ZGFT: On Four-Dimensional Form, N + a May Be a**
 
-ZGFT is a proposed discrete-spacetime framework in which the lattice step is
-the Planck length, the stretch variables are complex, and the strong force is
-modeled through a minimum effective distance, \(a_{\mathrm{eff}} = k^4a\).
+### Abstract
+
+ZGFT proposes a discrete-spacetime framework with a Planck-length lattice step,
+complex stretch variables, and a nuclear potential built from the effective
+length \(a_{\mathrm{eff}} = k^4a\). Numerical checks examine the scale relation,
+a repulsive core and attractive well, and deuteron binding energy. The reported
+deuteron radius and triplet scattering length differ from experiment; the
+current model does not yet include spin or predict the singlet scattering length.
+
+**Keywords:** discrete spacetime; Planck scale; complex stretch variables;
+finite differences; nuclear potential; deuteron; numerical verification
 
 ## Contents
 
 | File | Description |
 |---|---|
+| `README.md` | Chinese README |
 | `ZGFT_CN.tex` | Chinese manuscript |
 | `ZGFT_EN.tex` | English manuscript |
 | `ZG_治梓琪几何_引论_在四维形上N_a或许为a.pdf` | Chinese paper (PDF) |
 | `ZG_治梓琪几何_引论_在四维形上N_a或许为a (1).pdf` | Additional Chinese paper (PDF) |
+| `证明_验证报告.md` | Chinese numerical verification report |
+| `Verification_Report.md` | English translation of the numerical verification report |
 | `ZGFT_检测.py` | Checks scales, nuclear potential, and deuteron binding |
 | `ZGFT_检测.png` | Output figure |
 | `ZGFT_求解.py` | Solver script |
