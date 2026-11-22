@@ -4,9 +4,21 @@
 
 **ZGFT（治梓琪几何场论）引论：在四维形上 N+a 或许为 a**
 
-A discrete spacetime framework in which the lattice step is the Planck length,
-the stretch variable k is complex, and the strong force follows from a minimum
-distance a_eff = k⁴a.
+### 摘要
+
+ZGFT 提出一种离散时空框架：以普朗克长度为格距，引入复数伸缩变量，并以有效长度
+a_eff = k⁴a 构造核力势。项目通过数值计算检验尺度关系、排斥核与吸引阱，以及氘核
+结合能；报告给出的氘核半径和三重态散射长度与实验值仍有偏差，自旋相关的单重态
+散射长度尚不能由当前模型给出。
+
+**关键词：** 离散时空；普朗克尺度；复数伸缩变量；有限差分；核力势；氘核；数值检验
+
+**English summary:** ZGFT proposes a discrete-spacetime framework with a Planck-length
+lattice step, complex stretch variables, and a nuclear potential built from the
+effective length a_eff = k⁴a. Numerical checks examine the scale relation, a
+repulsive core and attractive well, and deuteron binding energy. The reported
+deuteron radius and triplet scattering length differ from experiment; the
+current model does not yet include spin or predict the singlet scattering length.
 
 ---
 
@@ -14,10 +26,13 @@ distance a_eff = k⁴a.
 
 | File | Description |
 |---|---|
+| `README_EN.md` | English README |
 | `ZGFT_CN.tex` | 中文版（XeLaTeX / pdfLaTeX + ctex） |
 | `ZGFT_EN.tex` | English version |
 | `ZGFT_CN.pdf` | 中文版 PDF |
 | `ZGFT_EN.pdf` | English PDF |
+| `证明_验证报告.md` | 中文数值检验报告 |
+| `Verification_Report.md` | English translation of the numerical verification report |
 | `ZGFT_检测.py` | Verification: scale, nuclear potential, deuteron binding |
 | `ZGFT_检测.png` | Output figure |
 
