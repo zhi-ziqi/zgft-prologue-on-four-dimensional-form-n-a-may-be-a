@@ -1,5 +1,7 @@
 # ZGFT — Ziqi Geometry Field Theory
 
+[English README](README_EN.md)
+
 **ZGFT（治梓琪几何场论）引论：在四维形上 N+a 或许为 a**
 
 A discrete spacetime framework in which the lattice step is the Planck length,
