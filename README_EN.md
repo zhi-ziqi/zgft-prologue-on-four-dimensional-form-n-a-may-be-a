@@ -6,25 +6,33 @@
 
 ### Abstract
 
-ZGFT proposes a discrete-spacetime framework with a Planck-length lattice step,
-complex stretch variables, and a nuclear potential built from the effective
-length \(a_{\mathrm{eff}} = k^4a\). Numerical checks examine the scale relation,
-a repulsive core and attractive well, and deuteron binding energy. The reported
-deuteron radius and triplet scattering length differ from experiment; the
-current model does not yet include spin or predict the singlet scattering length.
+ZGFT (Ziqi Geometry Field Theory) proposes a framework based on discrete
+spacetime, finite differences, and complex stretch variables. This repository
+includes the v4.8 Chinese and English manuscripts and a v4.9 text edition,
+covering a proposed gravitational field equation, comparisons across three
+gravitational regimes, and a multi-term nuclear potential with simplex-fitted
+deuteron-related calculations. Numerical results are claims of the proposed
+model and have not been independently validated.
 
-**Keywords:** discrete spacetime; Planck scale; complex stretch variables;
-finite differences; nuclear potential; deuteron; numerical verification
+**Keywords:** discrete spacetime; finite differences; complex stretch
+variables; gravitational field equation; gravitational regimes; nuclear
+potential; deuteron
 
 ## Contents
 
 | File | Description |
 |---|---|
 | `README.md` | Chinese README |
-| `ZGFT_CN.tex` | Chinese manuscript |
-| `ZGFT_EN.tex` | English manuscript |
+| `ZGFT_CN.tex` | v4.8 Chinese manuscript |
+| `ZGFT_EN.tex` | v4.8 English manuscript |
+| `ZGFT_文字版.txt` | v4.9 text edition |
 | `ZG_治梓琪几何_引论_在四维形上N_a或许为a.pdf` | Chinese paper (PDF) |
 | `ZG_治梓琪几何_引论_在四维形上N_a或许为a (1).pdf` | Additional Chinese paper (PDF) |
+| `ZG_治梓琪几何_引论_在四维形上N_a或许为a (3).pdf` | New paper PDF |
+| `ZG_治梓琪几何_引论_在四维形上N_a或许为a (2).pdf` | Additional paper PDF |
+| `ZGFT_引力三区.py` | Gravitational-regime calculation and plotting script |
+| `ZGFT_引力三区对比.png` | Gravitational-regime comparison figure |
+| `ZGFT_单纯形.py` | Simplex fitting script for nuclear-potential parameters |
 | `证明_验证报告.md` | Chinese numerical verification report |
 | `Verification_Report.md` | English translation of the numerical verification report |
 | `ZGFT_检测.py` | Checks scales, nuclear potential, and deuteron binding |
@@ -90,7 +98,7 @@ CC BY 4.0
 
 ## DOI
 
-[10.5281/zenodo.24433229](https://doi.org/10.5281/zenodo.24433229) — Zenodo record
+Earlier Zenodo record: [10.5281/zenodo.24433229](https://doi.org/10.5281/zenodo.24433229)
 
 ## Author
 
