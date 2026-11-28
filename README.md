@@ -92,9 +92,14 @@ Comparison curve: Malfliet–Tjon potential
 
 CC BY 4.0
 
-## DOI
+## Zenodo 版本
 
-Earlier Zenodo record: https://doi.org/10.5281/zenodo.24433229
+| 版本 | 说明 | DOI |
+|---|---|---|
+| **v4.9（新版，2026-11-28）** | 当前版本 | [10.5281/zenodo.24615368](https://doi.org/10.5281/zenodo.24615368) |
+| **v4.5（旧版，2026-11-22）** | 早期版本 | [10.5281/zenodo.24433229](https://doi.org/10.5281/zenodo.24433229) |
+
+**概念 DOI（引用该项目及其最新版本）：** [10.5281/zenodo.23914598](https://doi.org/10.5281/zenodo.23914598)
 
 ## Author
 
