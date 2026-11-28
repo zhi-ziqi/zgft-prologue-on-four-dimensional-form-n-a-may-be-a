@@ -6,19 +6,20 @@
 
 ### 摘要
 
-ZGFT 提出一种离散时空框架：以普朗克长度为格距，引入复数伸缩变量，并以有效长度
-a_eff = k⁴a 构造核力势。项目通过数值计算检验尺度关系、排斥核与吸引阱，以及氘核
-结合能；报告给出的氘核半径和三重态散射长度与实验值仍有偏差，自旋相关的单重态
-散射长度尚不能由当前模型给出。
+ZGFT（治梓琪几何场论）提出一种基于离散时空、有限差分和复数伸缩变量的理论框架。
+仓库收录 v4.8 中英文论文稿与 v4.9 文字版，涉及引力场方程、引力三区对比，以及由
+单纯形程序拟合的多项核力势和氘核相关数值。文中数值为作者提出的模型结果，并不代表
+已由独立研究验证。
 
-**关键词：** 离散时空；普朗克尺度；复数伸缩变量；有限差分；核力势；氘核；数值检验
+**关键词：** 离散时空；有限差分；复数伸缩变量；引力场方程；引力三区；核力势；氘核
 
-**English summary:** ZGFT proposes a discrete-spacetime framework with a Planck-length
-lattice step, complex stretch variables, and a nuclear potential built from the
-effective length a_eff = k⁴a. Numerical checks examine the scale relation, a
-repulsive core and attractive well, and deuteron binding energy. The reported
-deuteron radius and triplet scattering length differ from experiment; the
-current model does not yet include spin or predict the singlet scattering length.
+**English summary:** ZGFT (Ziqi Geometry Field Theory) proposes a framework based on
+discrete spacetime, finite differences, and complex stretch variables. This
+repository includes the v4.8 Chinese and English manuscripts and a v4.9 text
+edition, covering a proposed gravitational field equation, comparisons across
+three gravitational regimes, and a multi-term nuclear potential with
+simplex-fitted deuteron-related calculations. Numerical results are claims of
+the proposed model and have not been independently validated.
 
 ---
 
@@ -27,8 +28,14 @@ current model does not yet include spin or predict the singlet scattering length
 | File | Description |
 |---|---|
 | `README_EN.md` | English README |
-| `ZGFT_CN.tex` | 中文版（XeLaTeX / pdfLaTeX + ctex） |
-| `ZGFT_EN.tex` | English version |
+| `ZGFT_CN.tex` | v4.8 中文论文稿 |
+| `ZGFT_EN.tex` | v4.8 English manuscript |
+| `ZGFT_文字版.txt` | v4.9 文字版 |
+| `ZG_治梓琪几何_引论_在四维形上N_a或许为a (3).pdf` | 新版论文 PDF |
+| `ZG_治梓琪几何_引论_在四维形上N_a或许为a (2).pdf` | 附加论文 PDF |
+| `ZGFT_引力三区.py` | 引力三区计算与绘图脚本 |
+| `ZGFT_引力三区对比.png` | 引力三区对比图 |
+| `ZGFT_单纯形.py` | 核力参数单纯形拟合脚本 |
 | `ZGFT_CN.pdf` | 中文版 PDF |
 | `ZGFT_EN.pdf` | English PDF |
 | `证明_验证报告.md` | 中文数值检验报告 |
@@ -87,7 +94,7 @@ CC BY 4.0
 
 ## DOI
 
-https://doi.org/10.5281/zenodo.24433229
+Earlier Zenodo record: https://doi.org/10.5281/zenodo.24433229
 
 ## Author
 
