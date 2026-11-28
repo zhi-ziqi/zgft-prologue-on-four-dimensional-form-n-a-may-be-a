@@ -7,14 +7,14 @@
 
 \title{\textbf{ZGFT (Ziqi Geometry Field Theory) Introduction: On the Four-Dimensional Form, N+a May Be a}}
 \author{Ziqi Zhi}
-\date{}
+\date{v4.8}
 
 \begin{document}
 \maketitle
 
-\noindent\textbf{Symbol note:} Because of possible language rendering errors, all \(\mathbf{k}\) below are in bold, meaning vectors; \(k\) with a suffix or with a power subscript (such as \(k_x\), \(k_y\)) is in white body. Bold \(\mathbf{k}\) is a vector.
-
 \section{Definitions}
+
+Oh, by the way, because of possible rendering errors of the language, all \(\mathbf{k}\) below are in bold; if \(\mathbf{k}\) carries a suffix or a power subscript, then it is in white body. Bold \(\mathbf{k}\) is a vector.
 
 \begin{equation}
 \Delta_+ f(x)=\frac{f(x+a)-f(x)}{a}
@@ -44,6 +44,8 @@ Physically it is impossible for it to take 0; the minimum distance can only be t
 On the four-dimensional form \(N+a\) may be \(a\). Therefore, there is no boundary. For example, on a sphere, we walk a little more than one circle and we only return to the starting point; and spacetime as four dimensions will be more complicated, therefore, there is no boundary.
 
 \section{ZGFT Part}
+
+\subsection{Discrete variables}
 
 Define \(\mathbf{k}\) (the discrete variable):
 
@@ -81,7 +83,7 @@ And the normal way to find the small volume of a region of an object is \(a^3\);
 Its two-dimensional Pythagorean law expression is:
 
 \begin{equation}
-S^2=\left|\sum_{n}^{x_1}k_{xn}a\right|^2+\left|\sum_{n}^{y_1}k_{yn}a\right|^2
+S^2=\operatorname{Re}\left[\left(\sum_{n}^{x_1}k_{xn}a\right)^2+\left(\sum_{n}^{y_1}k_{yn}a\right)^2\right]
 \end{equation}
 
 The left side and the right side of this formula are both real numbers.
@@ -92,11 +94,17 @@ One can also apply \(\Delta_+\) to both sides of this formula.
 
 The minimum distance between two points is \(a\); the minimum volume and area are \(a^3\) and \(a^2\).
 
+\subsection{Gravity}
+
 \begin{equation}
-\Delta_{++}(Z)=\sum_{n=1}^{i}h_n\cdot\mathbf{k}^4_n\cdot a^4=C
+\Delta_{++}(Z)=\sum_{n=1}^{i}h_n\cdot\mathbf{k}^4_n\otimes\sigma\cdot a^4=C
 \end{equation}
 
-Here \(C\) is the gravitational field. At the same time, the reason why \(\mathbf{k}^4_n\) in this formula does not carry an absolute value sign is that under this system it is default to have a real part and an imaginary part. Here the real part of \(C\) is the strength of the gravitational field, and the imaginary part is the quantum phase.
+Here \(C\) is the gravitational field (m\(^4\)).
+
+The gravitational source may have spin.
+
+At the same time, the reason why \(\mathbf{k}^4_n\) in this formula does not carry an absolute value sign is that under this system it is default to have a real part and an imaginary part.
 
 The details of \(Z\) inside need to be understood in Chapter 3.
 
@@ -144,6 +152,9 @@ And if \(\mathbf{k}\) is complex, then write it in the form of \(e\) again...
 
 After computing the rate of change, compute the small volume of one place, and because there is \(a_t\), therefore what is computed is the four-dimensional figure. (You should still remember \(c=1\), space and time are equivalent)
 
+
+A body in the gravitational field moves along the geodesic of the curved spacetime, i.e. the one that follows the curvature among the two shortest lines in Chapter 3; the part \(s\) that jumps over spacetime is not counted for now.
+
 \section{Z Space (Z is named with the first letter of my name)}
 
 Let us imagine, the \(x\) axis, \(y\) axis, \(z\) axis, \(t\) axis of time and space, all things seem to be spread out on one space, for example, any behavior carried out on a sphere should only be confined to this sphere. Therefore, we call this sphere Z space.
@@ -172,6 +183,12 @@ If there is purely only change on the \(z\) axis, it shows that space only has t
 
 And the complete Z space should be all the axes contained within this dimension.
 
+At the same time here, I have a conjecture: between two points the shortest line segment has two, except in absolute vacuum.
+
+Because it is not absolute vacuum, therefore there will certainly be energy, therefore spacetime will also bend; suppose before bending there are point \(a\) and point \(b\), they are influenced by the bending, that is to say, from point \(a\) to point \(b\) there is the straight line that jumps over the bent spacetime, and there is also the one that follows the bent spacetime, and these two are indeed both shortest.
+
+But these two segments have one common point, that is, you cannot find the negative segment corresponding to them to cancel; we call the part of these two segments that jumps over spacetime \(s\), then its energy cannot be simply the known segment multiplied by some constant, but should be the sum of the known segment and \(s\) multiplied by some constant.
+
 \section{Matrix with \(i\)}
 
 Here, we assume one situation of one point: and it can only be one point
@@ -195,7 +212,7 @@ k_t &= e^i
 \end{pmatrix}
 \end{equation}
 
-This matrix is non-Hermitian.
+This matrix is non-Hermitian (remember to add).
 
 Here, I need to state one point first, why I use forward difference and not backward difference: first, backward difference fails at the starting point, and forward difference fails at the boundary; if according to the starting point \(x-a\) equals the boundary \(n\), and the starting point \(n+a\) equals the starting point \(x\), then the difference between these two is actually very small.
 
@@ -203,45 +220,9 @@ Here, I need to state one point first, why I use forward difference and not back
 
 Currently cannot write it out.
 
-\section{The non-fixed and the fixed}
+\section{Electromagnetic force}
 
-Here, we need to introduce a new symbol \(\Phi\) (Phi), meaning all possible added together.
-
-When we really need it, is in quantum mechanics, but now we first define two concepts:
-
-\textbf{Fixed:}
-
-We call \(x\) fixed, if and only if \(\Phi x=x\).
-
-\textbf{Non-fixed:}
-
-We call \(y\) non-fixed, if and only if \(\Phi y\neq y\).
-
-If a number is fixed, that is to say its possibility is only itself one number, then it is also determined. If a thing, such as quantum is a state like quantum entanglement, then it belongs to non-fixed; and if we count the number of eyes on your body, then the number of your eyes is fixed.
-
-If a number is fixed, then the following conditions are equivalent:
-
-\begin{enumerate}
-\item \(x\) is fixed
-\item \(x\) is not a variable
-\item \(\Phi x=x\)
-\end{enumerate}
-
-Proof: if \(x\) is not a variable, then it is \(34\), \(i\) or something, then its possibility is still itself, therefore 1, 2, 3 are equivalent.
-
-If a number is non-fixed, then the following conditions are equivalent:
-
-\begin{enumerate}
-\item \(y\) is non-fixed
-\item \(y\) contains or itself is a variable
-\item \(\Phi y=1\)
-\end{enumerate}
-
-If \(y\) contains a variable, such as a variable like \(x\), and \(x\) is not yet a constant, then its possibilities will be many, therefore the result is necessarily not equal to itself, but also because of normalization, therefore the result necessarily equals 1, therefore 1, 2, 3 are equivalent.
-
-And what physical meaning and other uses do the fixed and the non-fixed have? At present there is not yet a time to use them.
-
-And about more information of \(\Phi\), I will not discuss here, because it will be another part of mine, ZA (Ziqi Algebra, but that is also a matter of more than ten years later, after all I have to wait for ZG to contain at least two or three basic forces).
+Same as the weak force.
 
 \section{The minimal action in 3+1 dimensions}
 
@@ -267,28 +248,99 @@ Before this we need to understand several basic conjectures of ZG:
 From this we obtain the formula:
 
 \begin{equation}
-V(a_r)=\frac{1}{2-\frac{\mathbf{k}^4a}{a_r}}\left[W\cdot\exp\left(-\left(\frac{a_r}{\mathbf{k}^4a}\right)^2\right)\cdot\frac{\mathbf{k}^4a}{a_r}-W_1\cdot\exp\left(-\frac{a_r}{2\mathbf{k}^4a}\right)\cdot\frac{\mathbf{k}^4a}{a_r}\right]
+V(a_r)=V_{\omega}+V_{2\pi}+V_{ten}+V_{ls}
+\end{equation}
+
+\begin{equation}
+V_{\omega}=w_{\omega}\frac{e^{-a_r/R_{\omega}}}{a_r},\qquad
+V_{2\pi}=-w_{2\pi}\frac{e^{-a_r/R_{2\pi}}}{a_r}
+\end{equation}
+
+\begin{equation}
+V_{ten}=w_T\,S_{12}\frac{1}{x}\left(1+\frac{3}{x}+\frac{3}{x^2}\right)e^{-x}\left[1-e^{-(a_r/R_{\omega})^2}\right],\qquad x=\frac{a_r}{R_{\pi}}
+\end{equation}
+
+\begin{equation}
+V_{ls}=w_V\,(\mathbf{L}\cdot\mathbf{S})\,e^{-a_r/R_{2\pi}}
+\end{equation}
+
+\begin{equation}
+R_{\omega}=\frac{\hbar}{m_{\omega}c}=0.25\ \mathrm{fm},\quad
+R_{2\pi}=\frac{\hbar}{2m_{\pi}c}=0.70\ \mathrm{fm},\quad
+R_{\pi}=\frac{\hbar}{m_{\pi}c}=1.41\ \mathrm{fm}
+\end{equation}
+
+\begin{equation}
+S_{12}=3(\sigma_1\cdot\hat a_{rr})(\sigma_2\cdot\hat a_{rr})-(\sigma_1\cdot\sigma_2),\qquad \hat a_{rr}=\frac{a_r\ (\text{vector})}{a_r\ (\text{value})}
 \end{equation}
 
 Here \(r\) is taken as \(a\), so that this can hold in comparison with present real results.
 
 At the same time one needs to know, \(\mathbf{k}^4\) has changed, so \(a\) needs to multiply \(\mathbf{k}^4\), and will also change.
 
-Here \(w\) is a constant (the dimension is energy), at the same time, one can derive \(w\approx 2070\,\mathrm{MeV}\), \(w_1\approx 927\,\mathrm{MeV}\).
+Here the strengths are constants: \(w_{\omega}\approx 2842.92\ \mathrm{MeV\cdot fm}\), \(w_{2\pi}\approx 479.83\ \mathrm{MeV\cdot fm}\) (divided by length, hence the fm), \(w_T\approx -9.195\ \mathrm{MeV}\), \(w_V\approx 39.676\ \mathrm{MeV}\) (multiplied by dimensionless shapes, hence no fm).
 
 \(a_r\) is the distance between two objects where nuclear force happens.
 
 Using this can explain nuclear force.
 
-Below is its Lagrangian density.
+
+\subsection{Motion of a nucleon in the field}
 
 \begin{equation}
-L=\operatorname{Re}\left(\frac{1}{2}\left(\Delta_t\mathbf{k}\right)^2p^2-\frac{1}{2}\mathbf{k}^2p^2s^2-V(a_r)+\frac{\chi\rho}{b}\right)
+\Delta_{++}x=-\frac{\Delta_+V(a_r)}{m}
+\end{equation}
+
+
+A numerical comparison of four deuteron observables is carried out by ZGFT\_simplex.py
+(Nelder--Mead simplex, residual $\chi^2=0.0004$):
+
+\begin{center}
+\begin{tabular}{lccc}
+\hline
+observable & theory & experiment & deviation \\
+\hline
+deuteron energy $E_0$ (MeV) & $-2.2381$ & $-2.224$ & $-0.63\%$ \\
+triplet scattering length $a_t$ (fm) & $5.445$ & $5.42$ & $+0.46\%$ \\
+D-wave probability $P_D$ & $5.694\%$ & $5.8\%$ & $-1.83\%$ \\
+quadrupole moment $Q$ (fm$^2$) & $0.28652$ & $0.2859$ & $+0.22\%$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Lagrangian density at this stage}
+
+\begin{equation}
+L=\operatorname{Re}\left(\frac{1}{2}\Delta_t\mathbf{k}^2p^2-\frac{1}{2}\mathbf{k}^2p^2s^2-V(a_r)+\frac{\chi\rho}{b}\right)
 \end{equation}
 
 \begin{equation}
 \mathcal{Z}=\operatorname{Re}\left(\sum_i\sum_n L\cdot a^4\cdot\mathbf{k}^4_n\right)
 \end{equation}
 
+
+
+\section{To be completed}
+
+\textbf{$\gamma$ matrices and the exact coefficients of $w_T$, $w_V$}
+
+$w_T$ and $w_V$ are presently independent parameters. If they come from $\omega$ vector exchange, they should be
+
+\begin{equation}
+w_T=w_{\omega}\frac{(\hbar/2Mc)^2}{R_{\omega}^2}c_T,\qquad
+w_V=w_{\omega}\frac{(\hbar/2Mc)^2}{R_{\omega}^2}c_l
+\end{equation}
+
+where $c_T$, $c_l$ are fixed by $\gamma$-matrix elements, requiring the Dirac equation and $\gamma$-matrix algebra.
+
+
+\vspace{2em}
+\noindent\textbf{Declaration}
+
+The core ideas and core formulas of this work were proposed by me (Ziqi Zhi); AI only assisted in
+refining the derivations, calculations and typesetting. This work is made by me, with thanks to DeepSeek AI.
+
+\vspace{1em}
+\noindent Ziqi Zhi\quad 2026
 
 \end{document}
