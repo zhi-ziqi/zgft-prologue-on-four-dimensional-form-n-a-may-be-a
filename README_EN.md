@@ -96,9 +96,14 @@ Compile either manuscript with XeLaTeX:
 
 CC BY 4.0
 
-## DOI
+## Zenodo Versions
 
-Earlier Zenodo record: [10.5281/zenodo.24433229](https://doi.org/10.5281/zenodo.24433229)
+| Version | Description | DOI |
+|---|---|---|
+| **v4.9 (new, 2026-11-28)** | Current release | [10.5281/zenodo.24615368](https://doi.org/10.5281/zenodo.24615368) |
+| **v4.5 (previous, 2026-11-22)** | Earlier release | [10.5281/zenodo.24433229](https://doi.org/10.5281/zenodo.24433229) |
+
+**Concept DOI (for citing this project and its latest version):** [10.5281/zenodo.23914598](https://doi.org/10.5281/zenodo.23914598)
 
 ## Author
 
